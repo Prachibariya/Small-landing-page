@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Landing Page</title>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50 rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-500">MyBrand</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
+        <a href="#features" class="text-gray-700 hover:text-blue-500">Features</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-500">About</a>
+        <a href="#pricing" class="text-gray-700 hover:text-blue-500">Pricing</a>
+        <a href="#testimonials" class="text-gray-700 hover:text-blue-500">Testimonials</a>
+        <a href="#faq" class="text-gray-700 hover:text-blue-500">FAQ</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-500">Contact</a>
+      </nav>
+      <a href="#get-started" class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-500 text-white text-center py-24 rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <h2 class="text-5xl font-bold mb-6">Build Websites Faster with Tailwind</h2>
+    <p class="text-lg md:text-xl mb-8">Create modern, responsive designs in no time with utility-first CSS.</p>
+    <a href="#features" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Learn More</a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="container mx-auto py-20 px-6 grid md:grid-cols-3 gap-10 rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">⚡ Fast Development</h3>
+      <p class="text-gray-500">Use pre-built utility classes directly in your HTML for quick styling.</p>
+    </div>
+    <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">📱 Responsive Design</h3>
+      <p class="text-gray-500">Easily build mobile-friendly layouts with Tailwind’s responsive utilities.</p>
+    </div>
+    <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">🎨 Fully Customizable</h3>
+      <p class="text-gray-500">Extend Tailwind with your own themes, colors, and styles.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-white py-20 rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 px-6 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4 justify-items-center ">About Our Product</h2>
+        <p class="text-gray-500 mb-6">We built this tool to help developers save time and create stunning user interfaces effortlessly. Tailwind CSS makes it easy to design without leaving your HTML.</p>
+        <a href="#pricing" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700 transition">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="container mx-auto py-20 px-6 text-center rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <h2 class="text-3xl font-bold mb-12">Pricing Plans</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Starter</h3>
+        <p class="text-gray-500 mb-4">Best for beginners</p>
+        <p class="text-4xl font-bold mb-6">₹500<span class="text-lg">/mo</span></p>
+        <ul class="text-gray-500 mb-6 space-y-2">
+          <li>✔ Basic Features</li>
+          <li>✔ 1 Project</li>
+          <li>✔ Community Support</li>
+        </ul>
+        <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Choose</a>
+      </div>
+      <div class="bg-blue-500 text-white p-8 rounded-xl shadow-lg transform scale-105">
+        <h3 class="text-xl font-bold mb-2">Pro</h3>
+        <p class="mb-4">Best for professionals</p>
+        <p class="text-4xl font-bold mb-6">₹999<span class="text-lg">/mo</span></p>
+        <ul class="mb-6 space-y-2">
+          <li>✔ All Starter Features</li>
+          <li>✔ Unlimited Projects</li>
+          <li>✔ Premium Support</li>
+        </ul>
+        <a href="#" class="bg-white text-blue-500 px-6 py-3 rounded hover:bg-gray-200 transition">Choose</a>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Enterprise</h3>
+        <p class="text-gray-500 mb-4">Best for companies</p>
+        <p class="text-4xl font-bold mb-6">₹900<span class="text-lg">/mo</span></p>
+        <ul class="text-gray-500 mb-6 space-y-2">
+          <li>✔ All Pro Features</li>
+          <li>✔ Team Accounts</li>
+          <li>✔ 24/7 Dedicated Support</li>
+        </ul>
+        <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Choose</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-gray-100 py-20 px-6 rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12">What Our Users Say</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-gray-500 mb-4">"Tailwind has completely changed the way I build websites. It’s fast and efficient."</p>
+          <h4 class="font-bold">— Alex</h4>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-gray-500 mb-4">"I can’t imagine building a modern UI without Tailwind anymore."</p>
+          <h4 class="font-bold">— Sarah</h4>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-gray-500 mb-4">"My productivity doubled after switching to Tailwind CSS!"</p>
+          <h4 class="font-bold">— John</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="container mx-auto py-20 px-6 rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+    <div class="space-y-6 max-w-3xl mx-auto">
+      <details class="bg-white p-6 rounded-xl shadow">
+        <summary class="font-semibold cursor-pointer">What is Tailwind CSS?</summary>
+        <p class="text-gray-500 mt-2">Tailwind CSS is a utility-first CSS framework that makes styling easy and fast.</p>
+      </details>
+      <details class="bg-white p-6 rounded-xl shadow">
+        <summary class="font-semibold cursor-pointer">Is Tailwind free to use?</summary>
+        <p class="text-gray-500 mt-2">Yes! Tailwind is open-source and free to use in any project.</p>
+      </details>
+      <details class="bg-white p-6 rounded-xl shadow">
+        <summary class="font-semibold cursor-pointer">Can I customize Tailwind?</summary>
+        <p class="text-gray-500 mt-2">Absolutely. You can extend the config to add your own colors, fonts, and spacing.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="get-started" class="bg-blue-500 text-center text-white py-20 rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to build with Tailwind?</h2>
+    <a href="#contact" class="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Get Started Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-900 text-gray-500 text-center py-8 rounded-xl hover:shadow-2xl hover:scale-105 transform transition duration-300">
+    <p>&copy; 2025 MyBrand. All rights reserved.</p>
+    <p class="mt-2">Built with ❤️ using Tailwind CSS</p>
+  </footer>
+
+</body>
+</html>
